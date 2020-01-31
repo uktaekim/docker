@@ -3,7 +3,7 @@ MAINTAINER "korea-uktaekim <utyk@live.co.kr>"
 LABEL "purpose"="practice"
 RUN apt-get update
 RUN apt-get install apache2 -y
-ADD ./test.html /var/www/html
+ADD ./index.html /var/www/html
 WORKDIR /var/www/html
 RUN ["/bin/bash", "-c", "echo hello >> test.html"]
 EXPOSE 80
